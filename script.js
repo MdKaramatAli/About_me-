@@ -1,3 +1,20 @@
+// loader 
+let loader = document.querySelector(".loader_box");
+window.addEventListener("load", function()
+{
+    loader.style.display = "flex";
+    setInterval(() => {
+    loader.style.display = "none";
+    }, 2000);
+})
+
+// Main containt
+const main = document.querySelector(".main");
+setTimeout(() => {
+    main.style.display='block';
+}, 1100);
+
+
 const gear= document.querySelector(".color_changer");
 const color_selector= document.querySelector(".color_selector");
 const cross = document.querySelector("#cross");
